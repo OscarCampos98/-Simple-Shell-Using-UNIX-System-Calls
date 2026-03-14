@@ -43,19 +43,19 @@ Once the shell is compiled, run the executable:
 You will see the shell prompt (OC_shell>>), where you can type commands.
 
 Examples:
-    - Run a single command:
-       - OC_shell>> ls -l
-    - Use pipes to connect commands:
-        - OC_shell>> ls | grep myfile | wc -l
-    - Use input/output redirection:
-        - OC_shell>> cat < poem.txt | grep "are" > output.txt
-    - Run a command in the background:
-        - OC_shell>> sleep 10 &
-    - Error Handling
-        - The shell recognizes several error scenarios and will print an appropriate message:
-            - Invalid Pipe Usage: If there is no command after the pipe (|), the shell prints:
-            - Invalid Output Redirection: If the output redirection (>) is incorrectly used, such as file.txt > more, the shell prints:
-            - Invalid Input Redirection with Pipe: If input redirection (<) is used after a pipe, such as in ls | more < file.txt, the shell prints:
+   - Run a single command:
+  - `OC_shell>> ls -l`
+- Use pipes to connect commands:
+  - `OC_shell>> ls | grep myfile | wc -l`
+- Use input/output redirection:
+  - `OC_shell>> cat < poem.txt | grep "are" > output.txt`
+- Run a command in the background:
+  - `OC_shell>> sleep 10 &`
+- Error Handling
+  - The shell recognizes several error scenarios and will print an appropriate message:
+    - Invalid Pipe Usage: If there is no command after the pipe (`|`), the shell prints:
+    - Invalid Output Redirection: If the output redirection (`>`) is incorrectly used, such as `file.txt > more`, the shell prints:
+    - Invalid Input Redirection with Pipe: If input redirection (`<`) is used after a pipe, such as in `ls | more < file.txt`, the shell prints:
 
 # Known Limitations
 The shell does not support advanced features like job control or complex command line parsing (e.g., multi-character separators).
