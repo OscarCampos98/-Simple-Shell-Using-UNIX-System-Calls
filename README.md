@@ -63,21 +63,25 @@ Input and output redirection should not be used in combination with pipes unless
 
 
 ## Test Cases
-#Basic Commands:
- - date
- - ls -l
-#Piping:
-- ls | grep A1 | wc -l
-#Redirection:
-- ls -l > file.lst
-- wc -l < file.txt
-#Background Commands:
-- sleep 10 &
 
-#Error Detection:
-- file.txt > more
-- ls | more < file.txt
-- ls |
+### Basic Commands
+- `date`
+- `ls -l`
+
+### Piping
+- `ls | grep A1 | wc -l`
+
+### Redirection
+- `ls -l > file.lst`
+- `wc -l < file.txt`
+
+### Background Commands
+- `sleep 10 &`
+
+### Error Detection
+- `file.txt > more`
+- `ls | more < file.txt`
+- `ls |`
 
 # Future Improvements
   - Add support for advanced command line parsing, such as handling multi-character operators and quoted strings.
